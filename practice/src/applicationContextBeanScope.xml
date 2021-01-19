@@ -14,8 +14,8 @@
     <!-- Define your beans here -->
     <bean id="myFortune" class="com.inclined.test.HappyFortune"></bean>
     
-    <bean id="myCoach" class="com.inclined.test.CricketCoach">
-    	<constructor-arg ref="myFortune"></constructor-arg>
+    <bean id="myCoach" class="com.inclined.test.CricketCoach" scope="prototype">
+    	<constructor-arg ref="myFortune"/>
     </bean>
     
     <!-- fortune here will find setFortune for setting ref(myFortune) -->
