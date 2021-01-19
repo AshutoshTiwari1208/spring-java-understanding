@@ -19,6 +19,12 @@ public class BaseballCoach implements Coach{
 		return "Baseball Day :" + this.happyFortune.generateFortune();
 	}
 	
+	public void onInit() {
+		System.out.println("Baseball is initialized: reached onInit !!");
+	}
 	
-
+	public void onDestroy() {
+		System.out.println("Baseball is XXXX Destroyed here @@");
+	}
+	
 }
