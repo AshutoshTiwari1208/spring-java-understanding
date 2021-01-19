@@ -15,6 +15,11 @@
     	<constructor-arg ref="myFortune"></constructor-arg>
     </bean>
     
+    <!-- fortune here will find setFortune for setting ref(myFortune) -->
+    <bean id="myHockey" class="com.inclined.test.HockeyCoach">
+    	<property name="fortune" ref="myFortune" />
+    </bean>
+    
 </beans>
 
 
